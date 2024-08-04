@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lovish Dak</title>
+    <style>table, th, td {
+        border: 1px solid black;
+      }</style>
+</head>
+<body>
+    <P>enter the vegetable that you have</P>
+    <table>
+        <tr>
+        <th>vegetable name</th>
+        <th>rate</th>
+        <th>weight</th>
+        </tr>
+
+        {% for vegetable in vegetables%}
+        <tr>
+          <td>{{vegetable.name}}</td>
+          <td>{{vegetable.rate}}</td>
+          <td>{{vegetable.weight}}</td>
+       
+        {% endfor %}
+       
+        </tr>
+    </table>
+   
+</body>
+</html>
